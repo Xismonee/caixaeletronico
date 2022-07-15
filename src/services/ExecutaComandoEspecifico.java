@@ -1,6 +1,5 @@
 package services;
 
-public interface ExecutarComandoEspecifico {
-
+public interface ExecutaComandoEspecifico {
 	boolean execute(int comando);
 }

@@ -1,6 +1,7 @@
 package repository;
 
 import java.util.ArrayList;
+
 import java.util.List;
 
 import model.Conta;
@@ -18,12 +19,10 @@ public class MemoriaContaRepository implements BaseRepository<Conta>{
 	public Conta findByld(int id) {
 		return contas.get(id);
 	}
-
+	
 	@Override
 	public void adiciona(Conta objeto) {
 		objeto.setNumeroDaConta(contas.size());
-		contas.add(objeto);
-		
+		contas.add(objeto);		
 	}
-
 }

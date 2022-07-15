@@ -1,11 +1,15 @@
 package services;
 
+import java.util.Scanner;
+
 public class ObtemComandoImpl implements ObtemComando {
 
 	@Override
 	public int execute() {
-		
-		return 0;
+		Scanner entrada = new Scanner(System.in);
+		System.out.println("Digite o número da opção que deseja");
+		int comando = entrada.nextInt();
+		return comando;		
 	}
 
 }

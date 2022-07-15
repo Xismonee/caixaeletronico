@@ -16,9 +16,8 @@ public class AbrirContaImpl implements AbrirConta{
 		conta = new Conta();
 		repository.adiciona(conta);
 		
-		System.out.printf("Conta número %d o saldo atual é de ");
-		return conta;
-		
+		System.out.printf("Conta número %d o saldo atual é de R$ %.2f", conta.getNumeroDaConta());
+		return conta;	
 	}
 
 }

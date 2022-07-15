@@ -3,6 +3,5 @@ package services;
 import model.Conta;
 
 public interface AbrirConta {
-   Conta execute();
-  
+   Conta execute(); 
 }
