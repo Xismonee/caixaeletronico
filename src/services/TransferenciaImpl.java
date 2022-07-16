@@ -19,6 +19,7 @@ public class TransferenciaImpl implements Transferencia {
 		System.out.println("Transferência realizada com sucesso!!" + valor);
 		System.out.printf("Seu saldo é de R$ %.2f %n ", conta.getSaldo());
 		
+		return valor;
 	}
 
 	@Override

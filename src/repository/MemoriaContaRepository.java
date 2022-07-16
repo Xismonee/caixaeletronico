@@ -8,7 +8,7 @@ import model.Conta;
 
 public class MemoriaContaRepository implements BaseRepository<Conta>{
 
-	private List<Conta> contas = new ArrayList<>();
+	private List<Conta> contas = new ArrayList<Conta>();
 
     @Override
     public List<Conta> findAll() {
@@ -16,7 +16,7 @@ public class MemoriaContaRepository implements BaseRepository<Conta>{
     }
 
 	@Override
-	public Conta findByld(int id) {
+	public Conta findById(int id) {
 		return contas.get(id);
 	}
 	

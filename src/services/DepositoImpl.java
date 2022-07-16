@@ -10,7 +10,6 @@ public class DepositoImpl implements Deposito {
 	}
 	@Override
 	public void execute(double valor, int numeroDaConta) {
-		this.repository = repository;
 		
 		Conta conta;
 		conta = repository.findById(numeroDaConta);

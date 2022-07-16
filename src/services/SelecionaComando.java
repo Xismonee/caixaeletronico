@@ -12,18 +12,16 @@ public class SelecionaComando {
 
 	public SelecionaComando() {
 		this.listarComandos = new ListarComandosImpl();
-		this.executaComandoEspecifico = new executaComandoEspecificoImpl;		
+		this.executaComandoEspecifico = new ExecutaComandoEspecificoImpl();	
+		this.obtemComando = new ObtemComandoImpl();
+		
 	}
 
 	public boolean executar() {
 		listarComandos.execute();
 		int comando = obtemComando.execute();
-		return executaComandoEspecifico(comando);
+		return this.executaComandoEspecifico.execute(comando);
 
 	}
 
-	private boolean executaComandoEspecifico(int comando) {
-		// TODO Auto-generated method stub
-		return false;
-	}
 }

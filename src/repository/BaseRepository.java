@@ -6,7 +6,7 @@ public interface BaseRepository <T>{
 
 List <T> findAll();
 	
-	T findByld(int id);
+	T findById(int id);
 	
      void adiciona(T objeto);
 }
