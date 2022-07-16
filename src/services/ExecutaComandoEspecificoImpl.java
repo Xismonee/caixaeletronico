@@ -45,11 +45,12 @@ public class ExecutaComandoEspecificoImpl implements ExecutaComandoEspecifico {
 			double valor = entrada.nextInt();
 			this.deposito.execute(valor, numero);
 			System.out.println("Seu Depósito Foi Realizado Com Sucesso!!");
+			
 
 		} else if (comando == 3) {
 			abrirConta.execute();
 		} else {
-			System.out.println("Opção invalida");
+			System.out.println("Opção inválida!");
 		}
 		return resultado;
 	}
